@@ -1,0 +1,27 @@
+{% extends 'banking/base.html' %}
+{% block content %}
+
+<section class="customer">
+  <div class="customer-container">
+    <div class="title">
+      <h2>Customers</h2>
+    </div>
+    {% for customer in customers %}
+    <div class="columns">
+        <div class="name">
+          <a href="{% url 'detail' customer.id %}"><p>{{customer.name}}</p></a>
+        </div>
+        <div class="balance">
+          <p>Total Balance {{customer.balance}}/-</p>
+        </div>
+        <div class="last-transcation">
+          <p>{{customer.last_transaction}}</p>
+        </div>
+    </div>
+    {% endfor %}
+    <div class="transaction">
+      <a href="{% url 'transfer' %}"><button type="button" class="btn btn-outline-primary"><h1>Transfer</h1></button></a>
+    </div>
+  </div>
+</section>
+{% endblock content %}

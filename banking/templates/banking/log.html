@@ -1,0 +1,24 @@
+{% extends 'banking/base.html' %}
+{% block content %}
+    <section class="log">
+        <div class="log-container">
+            {% for log in logs %}
+            <div class="log-table">
+                <p>{{log.pk}}</p>
+                <div class="from">
+                    <p>{{log.from_cust}}</p>
+                </div>
+                <div class="to">
+                    <p>{{log.to_cust}}</p>
+                </div>
+                <div class="amount">
+                    <p>{{log.amount}}</p>
+                </div>
+                <div class="time_stamp">
+                    <p>{{log.time_stamp}}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock content %}

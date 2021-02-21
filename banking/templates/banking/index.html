@@ -1,0 +1,19 @@
+{% extends 'banking/base.html' %}
+{% load static %}
+{% block content %}
+<section class="hero">
+  <div class="hero-container">
+    <div class="left">
+      <h2>Welcome to the TSF Bank</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non officiis nihil, enim eos in iste accusamus magni placeat dolores numquam!</p>
+      <div class="buttons">
+        <a href="{% url 'customer' %}"><button type="button" class="btn btn-outline-primary">View Customers</button></a>
+        <a href="{% url 'transfer' %}"><button type="button" class="btn btn-outline-primary">Make Transfer</button></a>
+      </div>
+    </div>
+    <div class="right">
+      <img src="{% static 'banking/images/banking.svg' %}" alt="banking.svg">
+    </div>
+  </div>
+</section>
+{% endblock %}

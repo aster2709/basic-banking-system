@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../images/bg.jpg);
+  background-size: cover;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+section.customer .customer-container .title {
+  margin-top: 1em;
+  margin-left: 5em;
+  margin-bottom: 2em;
+}
+
+section.customer .customer-container .columns {
+  margin: 0 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.customer .customer-container .columns .name p {
+  font-size: 20px;
+  color: #05FDD8;
+}
+
+section.customer .customer-container .transaction {
+  margin-top: 1em;
+  text-align: center;
+}
+
+section.transfer .transfer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+section.transfer .transfer-container .svg img {
+  width: 500px;
+}
+
+section.transfer .transfer-container form {
+  width: 500px;
+}
+
+section.transfer .transfer-container form label {
+  width: 50px;
+  display: inline-block;
+}
+
+section.transfer .transfer-container form input {
+  width: 100%;
+}
+
+section.transfer .transfer-container form input[type='submit'] {
+  background: lightgreen;
+}
+
+.alert {
+  border-radius: 5px;
+  position: absolute;
+  left: 40%;
+  top: 10%;
+}
+
+.log .log-container {
+  padding: 5em;
+}
+
+.log .log-container .log-table {
+  margin: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.hero .hero-container {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .hero-container .right {
+  width: 600px;
+}
+
+.hero .hero-container .right img {
+  width: 100%;
+}
+
+.hero .hero-container .left {
+  width: 500px;
+}
+
+nav img {
+  width: 50px;
+}
+
+.detail .detail-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10em;
+  margin-top: 10em;
+  width: 500px;
+}
+
+.detail .detail-container .first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.detail .detail-container .first img {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5em;
+}
+
+.detail .detail-container .second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.detail .detail-container .second img {
+  width: 50px;
+}
+
+.detail .detail-container .button {
+  margin-top: 3em;
+  margin-left: 1em;
+}
+/*# sourceMappingURL=main.css.map */

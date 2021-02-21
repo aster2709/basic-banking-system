@@ -1,0 +1,23 @@
+{% extends 'banking/base.html' %}
+{% load static %}
+{% block content %}
+<section class="detail">
+    <div class="detail-container">
+        <div class="first">
+            <img src="{% static 'banking/images/default.png' %}" alt="">
+            <h2>{{customer}}</h2>
+        </div>
+        <div class="second">
+            <img src="{% static 'banking/images/wallet.png' %}" alt="">
+            <h3>{{customer.balance}}</h3>
+        </div>
+        <div class="third">
+            <small>Last transaction {{customer.last_transaction}}</small>
+        </div>
+        <div class="button">
+            <a href="{% url 'transfer' %}"><button type="button" class="btn btn-outline-primary">New Transfer</button></a>
+            <a href="{% url 'customer' %}"><button type="button" class="btn btn-outline-primary">Back</button></a>
+        </div>
+    </div>
+</section>
+{% endblock content %}

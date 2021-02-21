@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../images/bg.jpg);
+    background-size: cover;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+section.customer{
+    .customer-container{
+        .title{
+            margin-top: 1em;
+            margin-left: 5em;
+            margin-bottom: 2em;
+        }
+        .columns{
+            margin: 0 5em;
+            display: flex;
+            justify-content: space-between;
+            .name{
+                p{ 
+                font-size: 20px;
+                color: #05FDD8;
+                }
+            }
+        }
+        .transaction{
+            margin-top: 1em;
+            text-align: center;
+        }
+    }
+}
+section.transfer{
+    .transfer-container{
+        display: flex;
+        align-items: center;
+        height: 80vh;
+        justify-content: space-around;
+        .svg{
+            img{
+                width: 500px;
+            };
+        }
+        form{
+            width: 500px;
+            label{
+                width: 50px;
+                display: inline-block;
+            }
+            input{
+                width: 100%;
+            }
+            input[type='submit']{
+                background: lightgreen;
+            }
+        }
+    }
+}
+.alert{
+    border-radius: 5px;
+    position: absolute;
+    left: 40%;
+    top: 10%;
+}
+.log{
+    .log-container{
+        padding: 5em;
+        .log-table{
+            margin: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+}
+.hero{
+    .hero-container{
+        height: 80vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .right{
+            width: 600px;
+            img{
+                width: 100%;
+            }
+        }
+        .left{
+            width: 500px;
+        }
+    }
+}
+nav img{
+    width: 50px;
+}
+
+.detail{
+    .detail-container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10em;
+        margin-top: 10em;
+        width: 500px;
+        .first{
+            display: flex;
+            img{
+                width: 40px;
+                height: 40px;
+                margin-right: 0.5em;
+            }
+            
+        }
+        .second{
+            display: flex;
+            align-items: center;
+            img{
+                width: 50px;
+            }
+        }
+        .button{
+            margin-top: 3em;
+            margin-left: 1em;
+        }
+    }
+}

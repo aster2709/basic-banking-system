@@ -1,0 +1,26 @@
+{% extends 'banking/base.html' %}
+{% load static %}
+{% block content %}
+<section class="transfer">
+    <div class="transfer-container">
+        <div class="svg">
+            <img src="{% static 'banking/images/banking.png.svg' %}" alt="svg">
+        </div>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="left">
+                {{form1.as_p}}
+            </div>
+            <div class="middle">
+                {{form3.as_p}}
+            </div>
+            <div class="right">
+                {{form2.as_p}}
+            </div>
+            <div class="submit">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}
