@@ -13,24 +13,38 @@ a {
 }
 
 section.customer .customer-container .title {
-  margin-top: 1em;
-  margin-left: 5em;
-  margin-bottom: 2em;
+  margin: 1em 3em;
 }
 
 section.customer .customer-container .columns {
-  margin: 0 5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+section.customer .customer-container .columns div {
+  width: 300px;
+  text-align: center;
+}
+
+section.customer .customer-container .columns div span {
+  color: #05FDD8;
+  font-size: 17px;
+}
+
+section.customer .customer-container .columns .name {
+  text-align: left;
 }
 
 section.customer .customer-container .columns .name p {
   font-size: 20px;
   color: #05FDD8;
+}
+
+section.customer .customer-container .columns .last-transcation {
+  text-align: right;
 }
 
 section.customer .customer-container .transaction {

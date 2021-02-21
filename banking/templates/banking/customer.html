@@ -4,7 +4,8 @@
 <section class="customer">
   <div class="customer-container">
     <div class="title">
-      <h2>Customers</h2>
+      <h2>Customer Profiles</h2>
+      <hr>
     </div>
     {% for customer in customers %}
     <div class="columns">
@@ -12,7 +13,7 @@
           <a href="{% url 'detail' customer.id %}"><p>{{customer.name}}</p></a>
         </div>
         <div class="balance">
-          <p>Total Balance {{customer.balance}}/-</p>
+          <p>Balance <span>{{customer.balance}}</span>/-</p>
         </div>
         <div class="last-transcation">
           <p>{{customer.last_transaction}}</p>
@@ -20,7 +21,7 @@
     </div>
     {% endfor %}
     <div class="transaction">
-      <a href="{% url 'transfer' %}"><button type="button" class="btn btn-outline-primary"><h1>Transfer</h1></button></a>
+      <a href="{% url 'transfer' %}"><button type="button" class="btn btn-outline-primary"><h2>New Transfer</h2></button></a>
     </div>
   </div>
 </section>
